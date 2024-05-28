@@ -1,0 +1,16 @@
+openapi: 3.0.0
+info:
+  title: Code Unity Challenge
+  description: Open API definition
+  version: "0.1"
+servers:
+  - url: http://localhost:3001/api
+paths:
+  /cards:
+    $ref: './resources/Cards.yaml'
+  /cards/{id}:
+    $ref: './resources/CardById.yaml'
+  /cards/{id}/stats:
+    $ref: './resources/CardStats.yaml'
+  /cards/{attacker}/{defender}:
+    $ref: './resources/Fight.yaml'

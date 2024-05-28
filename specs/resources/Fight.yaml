@@ -1,0 +1,13 @@
+get:
+  summary: Fight
+  operationId: fightPokemon
+  description: Simulate a fight
+  tags:
+    - Fights
+  responses:
+    '200':
+      description: A fight result
+      content:
+        application/json:
+          schema:
+            $ref: '../responses/FightResponse.yaml'

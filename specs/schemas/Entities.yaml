@@ -1,0 +1,90 @@
+components:
+  schemas:
+    Card:
+      title: Card
+      type: object
+      required:
+        - id
+        - name
+        - attackName
+        - attackValue
+        - hp
+        - typeId
+        - expansion
+        - rarityId
+        - weaknessValue
+        - weaknessTypeId
+      properties:
+        id:
+          type: number
+          example: 1
+        name:
+          type: string
+          example: 'Pikachu'
+        attackName:
+          type: string
+          example: 'Gnaw'
+        attackValue:
+          type: number
+          example: 20
+        hp:
+          type: number
+          example: 60
+        typeId:
+          type: number
+          example: 1
+        type:
+          $ref: './Entities.yaml#/components/schemas/Type'
+        weaknessValue:
+          type: number
+          example: 2
+        weaknessTypeId:
+          type: number
+          example: 4
+        weaknessType:
+          $ref: './Entities.yaml#/components/schemas/Type'
+        resistanceValue:
+          type: number
+          example: 2
+        resistanceTypeId:
+          type: number
+          example: 4
+        resistanceType:
+          $ref: './Entities.yaml#/components/schemas/Type'
+        expansion:
+          type: string
+          example: 'Unified Minds'
+        rarityId:
+          type: number
+          example: 1
+        rarity:
+          $ref: './Entities.yaml#/components/schemas/Rarity'
+    Rarity:
+      title: Rarity
+      type: object
+      properties:
+        id:
+          type: number
+          example: 3
+        name:
+          type: string
+          example: 'Rare'
+    Type:
+      title: Type
+      type: object
+      properties:
+        id:
+          type: number
+          example: 1
+        name:
+          type: string
+          example: 'Electric'
+    Fight:
+      title: Fight
+      type: object
+      required:
+        - winner
+      properties:
+        winner:
+          type: boolean
+          example: true
