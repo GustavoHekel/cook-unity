@@ -59,6 +59,9 @@ components:
           example: 1
         rarity:
           $ref: './Entities.yaml#/components/schemas/Rarity'
+        imageURL:
+          type: string
+          example: 'https://domain.com/image.png'
     Rarity:
       title: Rarity
       type: object
