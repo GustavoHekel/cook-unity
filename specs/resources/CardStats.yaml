@@ -1,0 +1,11 @@
+get:
+  tags:
+    - Cards
+  summary: Get card stats
+  operationId: GetCardStats
+  responses:
+    '200':
+      content:
+        application/json:
+          schema:
+            $ref: '../responses/CardStatsResponse.yaml'

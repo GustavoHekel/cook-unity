@@ -1,0 +1,22 @@
+get:
+  tags:
+    - Cards
+  summary: Get all cards
+  operationId: GetCards
+  responses:
+    '200':
+      content:
+        application/json:
+          schema:
+            $ref: '../responses/CardsResponse.yaml'
+post:
+  tags:
+    - Cards
+  summary: Create new card
+  operationId: PostCard
+  responses:
+    '201':
+      content:
+        application/json:
+          schema:
+            $ref: '../responses/CardResponse.yaml'
