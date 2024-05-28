@@ -1,0 +1,7 @@
+title: Card response
+type: object
+required:
+  - data
+properties:
+  data:
+    $ref: '../schemas/Entities.yaml#/components/schemas/Card'
