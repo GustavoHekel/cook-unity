@@ -1,6 +1,0 @@
-[submodule "app"]
-    url = https://github.com/GustavoHekel/cook-unity-app
-    path = app
-[submodule "api"]
-    url = https://github.com/GustavoHekel/cook-unity-api
-    path = api
